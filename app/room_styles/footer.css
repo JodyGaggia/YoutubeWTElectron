@@ -1,0 +1,13 @@
+.bottomflexbox{
+    display: flex;
+    flex-direction: row;
+    height:5%;
+    background-color: rgb(34, 34, 34);
+    justify-content: end;
+    align-items: center;
+}
+
+.leavebutton{
+    margin-right: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}

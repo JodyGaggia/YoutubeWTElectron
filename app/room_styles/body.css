@@ -1,0 +1,13 @@
+.videoplayer{
+    display: flex;
+    flex:1;
+    background-color: #2e2d2e;
+    justify-content: center;
+    align-items: center;
+    padding:75px;
+}
+
+.player{
+    display: flex;
+    flex: 1;
+}

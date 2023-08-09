@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Together</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="room_styles/general.css">
+  <link rel="stylesheet" type="text/css" href="room_styles/playlistcolumn.css">
+  <link rel="stylesheet" type="text/css" href="room_styles/header.css">
+  <link rel="stylesheet" type="text/css" href="room_styles/body.css">
+  <link rel="stylesheet" type="text/css" href="room_styles/footer.css">
+</head>
+
+<body id="windowBody">
+  <div class="container">
+    <div class="playlistcolumn">
+      
+    </div>
+    <div class="maincolumn">
+      <div class="topflexbox">
+        <div class="roomiddiv">
+          <p class="currentroom" id="currentRoomLabel">ROOM123456789</p>
+        </div>
+        <div class="youtubesearchdiv">
+          <input type="text" id="youtubeInput" class="search-bar" placeholder="YouTube URL"></input>
+          <button type="button" id="updateButton">Update Video</button>
+        </div>
+        <div class="applogodiv">
+          
+        </div>
+      </div>
+
+      <div class="videoplayer">
+        <iframe id="player"
+        width="100%" height="100%"
+        src="https://www.youtube.com/embed/EIVd7VIgZPQ?enablejsapi=1&autoplay=1"
+        frameborder="0"
+        style="border-radius: 2px;"></iframe>
+      </div>
+
+      <div class="bottomflexbox">
+        <button class="leavebutton" id="leaveRoomButton">Leave Room</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+  <script src="../src/room/sockets.js"></script>
+  <script src="../src/room/helpers.js"></script>
+  <script src="../src/room/youtubevideoplayer.js"></script>
+  <script src="../src/room/roomhandler.js"></script>
+</body>
+</html>

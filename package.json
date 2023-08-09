@@ -1,0 +1,21 @@
+{
+  "name": "youtubewatchtogether",
+  "productName": "YouTube Watch Together",
+  "version": "1.0.0",
+  "description": "Watch YouTube with friends",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ."
+  },
+  "author": "Jody Gaggia",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^25.3.2",
+    "socket.io-client": "^4.7.1",
+    "videojs-youtube": "^3.0.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.1"
+  }
+}
